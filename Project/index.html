@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/myScript.js" async></script>
+    <script src="https://smtpjs.com/v3/smtp.js" async></script>
+</head>
+<title>
+Technical Challenge
+</title>
+<body>
+
+<form action="validation.php" autocomplete="on">
+<div class="box">
+    <div class="name">
+        <label for="nameInput">Name:</label>
+        <input type="text"
+        id="nameInput"
+        name="nameInput"
+        size=30
+        maxlength="100" 
+        placeholder="Enter Your Name"
+        pattern="[a-zA-Z0-9!#$%&'*+-/=?^_`{|}~]"
+        oninput="nameInputCheck(nameInput.value)"
+        onfocusout="resetName()" 
+        required>
+        <label id="nameCheckIcon" for="name"></label>
+        <br>
+    </div>
+    <div class="email">
+        <label for="email">Email:</label>
+        <input type="email"
+        id="emailInput"
+        name="emailInput"
+        size=30
+        maxlength="100"
+        placeholder="Enter Your Email"
+        pattern="[a-zA-Z0-9!#$%&'*+-/=?^_`{|}~]"
+        oninput="emailInputCheck(emailInput.value)"
+        onfocusout="resetEmail()"
+        required>
+        <label id="emailCheckIcon" for="email"></label>
+        <br>
+    </div>
+    <div class="paymentCard">
+        <label for="paymentCard">Card:</label>
+        <input type="text"
+        id="paymentCard"
+        name="paymentCard"
+        size=30
+        maxlength="100"
+        placeholder="Enter a Proxy Credit Card Number"
+        pattern="[a-zA-Z0-9!#$%&'*+-/=?^_`{|}~]"
+        oninput="cardInputCheck(paymentCard.value)"
+        onfocusout="resetCard()"
+        required>
+        <label id="cardCheckIcon" for="paymentCard"></label>
+        <br>
+    </div>
+    <div class="submit">
+        <input type="button"
+        class="submitButton"
+        value="Submit"
+        onmousedown="checkInputs(nameInput.value,emailInput.value,paymentCard.value)">
+    </div>
+</div>
+</form>
+</body>
+</html> 

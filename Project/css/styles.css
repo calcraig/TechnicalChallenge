@@ -1,0 +1,75 @@
+:root
+{
+  --green: #89c82e;
+  --grey: #3c3c3b;
+  --pink: #e70064;
+}
+
+body
+{
+  background-color: white;
+  font-family: "Calibri", sans-serif;
+}
+
+.box
+{
+  background-color: var(--green);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  border: 3px solid var(--grey);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: right;
+  box-sizing: border-box;
+  margin: auto;
+  white-space: nowrap
+}
+
+.name
+{
+  text-align: right;
+  box-sizing: content-box;
+  margin-bottom: 6px;
+}
+
+.email
+{
+  text-align: right;
+  box-sizing: content-box;
+  margin-bottom: 6px;
+}
+
+.paymentCard
+{
+  text-align: right;
+  box-sizing: content-box;
+  margin-bottom: 6px;
+}
+
+.submitButton
+{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  box-sizing: content-box;
+  background-color: var(--pink);
+  color: var(--grey);
+  border-color: var(--grey);
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+
+form
+{
+  color: var(--grey);
+}
+
+.test
+{
+  text-align: center;
+  box-sizing: content-box;
+}
